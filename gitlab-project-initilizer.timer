@@ -1,0 +1,10 @@
+[Unit]
+Description=Run GitLab Project Initializer every 2 minutes
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=2min
+Unit=gitlab_project_initializer.service
+
+[Install]
+WantedBy=timers.target
